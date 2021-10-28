@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-section {
+ height: 100vh;
+ width: 100%;
+ background: url(/images/fog-woman-power-fist.jpg);
+ background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.btn:hover {
+    opacity: 0.6;
+    transform: scale(0.8)
+  }
+
+.signin-signup-modal {
+    z-index: 1;
+    position: fixed;
+    display: none;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #bb7a03;
+    width: min-content;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+}
+
+.fadeIn {
+    opacity: 80%;
+    -webkit-transition: opacity 0.3s ease-in;
+  -moz-transition: opacity 0.3s ease-in;
+  -ms-transition: opacity 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3 ease-in;
+}
+
+.fadeOut {
+    opacity: 80%;
+    transition: opacity 0.3s ease-out;
+    -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -ms-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+ 
+}
+
+.modal-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-links {
+    margin: 1rem;
+    list-style: none;
+    color: #fff;
+}
+
+.modal-links:hover {
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+.modal-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.modal-nav span {
+    color: #fff;
+}
+
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    color: #fff;
+}
+
+.login-form input {
+    border-radius: 5px;
+    border: none;
+}
+
+.login-form button {
+    margin: 10px;
+}
+
+.login-form span {
+    margin: 10px;
+}
+
+.login-form a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    color: #fff;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    display: none;
+}
+
+.signup-form input {
+    border-radius: 5px;
+    border: none;
+}
+
+.signup-form button {
+    margin: 10px;
+    
+}
+
+input {
+    cursor: pointer;
+}
+
+
+.forgot-pword {
+    text-align: center;
+}
+.remember-login {
+    text-align: center;
+}
+
+.close {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.close:hover {
+    font-size: 2.3rem;
+}
+
+
+/* .blob-img {
+    background-repeat: no-repeat;
+    background-size: 200%;
+} */
+
+.hero-title {
+    color: #000;
+    margin: 1rem;
+    font-size: 3.4rem;
+    position: absolute;
+    top: 10%;
+}
+
+.call-to-action {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 1.5rem;
+    position: absolute;
+    top: 40%;
+}
+
+.call-to-action input {
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+
+.nested-title {
+    color: #fff;
+}
+
+.what-we-do {
+    height: 200px;
+    background-color: #bb7a03;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+ }
