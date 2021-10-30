@@ -39,14 +39,27 @@ body {
 
 .modal-content {
     background-color: #bb7a03;
-    width: min-content;
+    width: max-content;
     margin: auto;
     position: absolute;
     left: 50%;
+    padding: 15px;
+    opacity: 100%;
+}
+
+.modal-content h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.modal-content span {
+    text-align: center;
+    color: #fff;
+    margin-right: auto;
 }
 
 .fadeIn {
-    opacity: 80%;
+    opacity: 100%;
     -webkit-transition: opacity 0.3s ease-in;
   -moz-transition: opacity 0.3s ease-in;
   -ms-transition: opacity 0.3s ease-in;
@@ -55,7 +68,7 @@ body {
 }
 
 .fadeOut {
-    opacity: 80%;
+    opacity: 100%;
     transition: opacity 0.3s ease-out;
     -webkit-transition: opacity 0.3s ease-out;
   -moz-transition: opacity 0.3s ease-out;
@@ -63,33 +76,6 @@ body {
   -o-transition: opacity 0.3s ease-out;
  
 }
-
-.modal-nav {
-    display: flex;
-    justify-content: center;
-}
-
-.modal-links {
-    margin: 1rem;
-    list-style: none;
-    color: #fff;
-}
-
-.modal-links:hover {
-    text-decoration: underline;
-    font-size: 1.2rem;
-}
-
-.modal-links a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.modal-nav span {
-    color: #fff;
-}
-
-
 
 .login-form {
     display: flex;
@@ -152,35 +138,58 @@ input {
 }
 
 .close {
+    margin-right: 10px;
     font-size: 2rem;
     cursor: pointer;
 }
 
 .close:hover {
-    font-size: 2.3rem;
+    opacity: 50%;
+    text-decoration: none;
 }
 
-
-/* .blob-img {
-    background-repeat: no-repeat;
-    background-size: 200%;
-} */
-
 .hero-title {
-    color: #000;
+    color: #fff;
     margin: 1rem;
     font-size: 3.4rem;
     position: absolute;
     top: 10%;
 }
 
+.nested-title {
+    color: #bb7a03;
+}
+
+
 .call-to-action {
+  overflow: hidden;
     color: #fff;
     font-size: 1.2rem;
     margin: 1.5rem;
     position: absolute;
     top: 40%;
+    /* z-index: 1; */
 }
+
+.hero-form {
+    background-color: #bb7a03;
+    height: max-content;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.hero-form label {
+    font-size: 0.8rem;
+}
+
+.hero-form input[type=text] {
+    font-size: 0.8rem;
+    padding: 5px;
+    margin-left: 5px;
+    text-align: center;
+}
+
 
 .call-to-action input {
     border-radius: 5px;
@@ -189,22 +198,21 @@ input {
 }
 
 
-.nested-title {
-    color: #fff;
-}
-
 .what-we-do {
     height: 200px;
     background-color: #bb7a03;
 }
 
 .footer {
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
-    background-color: red;
+    background-color: #bb7a03;
     color: white;
     text-align: center;
  }
+
+.footer h5 {
+}
